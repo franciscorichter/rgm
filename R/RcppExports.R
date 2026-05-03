@@ -9,7 +9,3 @@ checkRegionCPP <- function(x, y) {
     .Call('_rgm_checkRegionCPP', PACKAGE = 'rgm', x, y)
 }
 
-timesTwo <- function(x) {
-    .Call('_rgm_timesTwo', PACKAGE = 'rgm', x)
-}
-

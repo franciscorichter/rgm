@@ -6,3 +6,4 @@
 #' @importFrom mvtnorm rmvnorm
 #' @importFrom truncnorm rtruncnorm
 #' @importFrom BDgraph bdgraph.sim
+"_PACKAGE"

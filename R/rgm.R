@@ -40,11 +40,7 @@ rgm<-function(data,X=NULL,iter=1000,burnin=0,initial.graphs=NULL, D=2, initial.l
 
   if(is.null(initial.graphs))
   {
-    for(i in 1:B)
-    {
-      g<-huge::huge.select(huge::huge(as.matrix(data[[i]]),method="glasso",verbose = FALSE),criterion="stars",verbose = FALSE)$refit
-      sample.graphs[,i,1]<-g[lt]
-    }
+    sample.graphs[,,1] <- 0
   }
   else
     sample.graphs[,,1]<-initial.graphs

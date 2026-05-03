@@ -150,3 +150,5 @@ ps$edge_prob
 <img src="edge_prob.png" width="600" height="350" alt="Edge Probability Heatmap"/>
 
 The graph shows the sparsity levels of the graphs as well as the similarities between the environments in terms of network structures
+
+

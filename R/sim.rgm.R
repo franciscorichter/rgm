@@ -129,29 +129,5 @@ custom_graph_sim <- function(p, n, graph) {
 }
 
 
-  rmvnorm <- function(n, mean, sigma) {
-    if (!isSymmetric(sigma, tol = sqrt(.Machine$double.eps))) {
-      stop("'sigma' must be a symmetric matrix")
-    }
-    sigma = as.matrix(sigma)
-    p = nrow(sigma)
-    if (length(mean) == 1) {
-      mean = rep(mean, p)
-    }
-    if (length(mean) != p) {
-      stop("'mean' and 'sigma' have non-conforming size")
-    }
-    chol_sigma = chol(sigma)
-
-    z = matrix(stats::rnorm(n * p), nrow = p, ncol = n)
-
-    # The resulting matrix from the multiplication is p x n
-    # We need to transpose it to get n x p
-    data = t(t(chol_sigma) %*% z) + matrix(mean, nrow = n, ncol = p, byrow = TRUE)
-
-    return(data)
-  }
-
-
 
 
