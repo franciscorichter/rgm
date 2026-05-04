@@ -5,3 +5,4 @@
 ^\.github$
 ^\.DS_Store$
 ^.*\.DS_Store$
+^cran-comments\.md$
