@@ -1,14 +1,18 @@
-# rgm 1.1.0
+# rgm 1.2.0
+
+First release after the 2026-02-01 CRAN archival.
 
 ## Major changes
 
-* **Dropped `huge` dependency** to address the CRAN archival on 2026-02-01.
-  The graphical-lasso warm start for the initial graph has been replaced with
-  an empty initial graph; pass `initial.graphs = ` to `rgm()` to keep a warm
-  start of your own choice.
+* **Dropped `huge` dependency** — the reason `rgm` was archived (because
+  `huge` itself was archived). The graphical-lasso warm start for the initial
+  graph has been replaced with an empty initial graph; pass
+  `initial.graphs = ` to `rgm()` to keep a warm start of your own choice.
 * New exported function `post_processing_rgm()` returning ggplot diagnostics
   (recovery, alpha estimation, posterior density, beta convergence, ROC, edge
   probability heatmap).
+* Updated CI to a working multi-platform `R-CMD-check` matrix
+  (Ubuntu release / oldrel-1, macOS, Windows) with `--as-cran`.
 
 ## Minor changes
 
@@ -18,6 +22,8 @@
   roxygen now actually emits the corresponding `importFrom()` lines into
   `NAMESPACE` (previously they were silently ignored).
 * Removed an unused C++ template file (`src/test.cpp`).
+* README rewritten: now references the JABES 2024 publication directly,
+  explains the latent-space framing, and includes a runnable quick-start.
 
 ## Internal
 
@@ -27,5 +33,5 @@
 
 # rgm 1.0.x
 
-Versions prior to 1.1.0 required the now-archived `huge` package and are
+Versions prior to 1.2.0 required the now-archived `huge` package and are
 available from the CRAN archive only.

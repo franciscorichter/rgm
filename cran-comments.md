@@ -1,4 +1,4 @@
-# Resubmission of rgm 1.1.0
+# Resubmission of rgm 1.2.0
 
 ## Reason for resubmission
 
@@ -13,7 +13,7 @@ package `huge`. This release removes the dependency on `huge`:
 `huge` is no longer in `Imports`, and there are no remaining uses of `huge`
 or any other archived package anywhere in the source.
 
-## Other changes in 1.1.0
+## Other changes in 1.2.0
 
 * Added `mvtnorm` to `Imports` and removed an orphan in-file `rmvnorm()`
   definition that was shadowing the imported one.
@@ -22,6 +22,8 @@ or any other archived package anywhere in the source.
   `RcppExports.{R,cpp}` via `Rcpp::compileAttributes()`.
 * Repository hygiene: untracked compiled artifacts and `.DS_Store` files;
   added `.github/`, `.DS_Store` to `.Rbuildignore`.
+* CI updated to multi-platform `R-CMD-check` (Ubuntu release / oldrel-1,
+  macOS, Windows), all green with `--as-cran`.
 
 ## Test environments
 
@@ -32,6 +34,8 @@ or any other archived package anywhere in the source.
        issue).
     3. HTML manual `<main>` tag warnings (local `tidy` version artifact;
        does not appear on the CRAN check farm).
+* GitHub Actions matrix (current `main`): Ubuntu (release + oldrel-1),
+  macOS (release), Windows (release) — all green with `--as-cran`.
 
 ## Reverse dependencies
 

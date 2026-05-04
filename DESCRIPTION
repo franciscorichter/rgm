@@ -1,7 +1,7 @@
 Package: rgm
 Type: Package
 Title: Advanced Inference with Random Graphical Models
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: 
     c(person("Francisco", "Richter", email = "richtf@usi.ch", role = c("aut", "cre")),
       person("Veronica", "Vinciotti", email = "veronica.vinciotti@unitn.it", role = c("ctb")),
