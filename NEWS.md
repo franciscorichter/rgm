@@ -1,3 +1,12 @@
+# rgm 1.2.1
+
+CRAN-pretest follow-up to 1.2.0:
+
+* `DESCRIPTION` now references the published JABES 2026 article via its
+  journal DOI (`<doi:10.1007/s13253-024-00638-6>`) instead of the
+  superseded arXiv preprint (CRAN policy on e-print references).
+* Removed "state-of-the-art" promotional language.
+
 # rgm 1.2.0
 
 First release after the 2026-02-01 CRAN archival.
@@ -22,7 +31,7 @@ First release after the 2026-02-01 CRAN archival.
   roxygen now actually emits the corresponding `importFrom()` lines into
   `NAMESPACE` (previously they were silently ignored).
 * Removed an unused C++ template file (`src/test.cpp`).
-* README rewritten: now references the JABES 2024 publication directly,
+* README rewritten: now references the JABES 2026 publication directly,
   explains the latent-space framing, and includes a runnable quick-start.
 
 ## Internal

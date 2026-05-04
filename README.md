@@ -3,7 +3,7 @@
 `rgm` is an R package that performs joint Bayesian inference of multiple
 Gaussian (or Gaussian-copula) graphical models that share structure through
 a low-dimensional latent space. It is the reference implementation of the
-random graphical model of Vinciotti, Wit & Richter (2024, *JABES*).
+random graphical model of Vinciotti, Wit & Richter (2026, *JABES*).
 
 When you have multivariate measurements collected at several *environments*
 (body sites, tissues, ecological habitats, time periods, treatment groups,
@@ -83,7 +83,7 @@ See `NEWS.md` for the full changelog.
 
 ## Reference
 
-Vinciotti, V., Wit, E. C., & Richter, F. (2024).
+Vinciotti, V., Wit, E. C., & Richter, F. (2026).
 *Random Graphical Model of Microbiome Interactions in Related Environments.*
 **Journal of Agricultural, Biological and Environmental Statistics**,
 31(1), 46–59. <https://doi.org/10.1007/s13253-024-00638-6>
